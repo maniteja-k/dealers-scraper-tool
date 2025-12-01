@@ -18,12 +18,12 @@ async def main():
         output_file = scraper.save_data()
         
         if output_file:
-            print(f"\n✅ SUCCESS! Data saved to: {output_file}")
+            print(f"\n SUCCESS! Data saved to: {output_file}")
         
         return 0
     
     except ScraperException as e:
-        print(f"\n❌ Scraper failed: {str(e)}")
+        print(f"\n Scraper failed: {str(e)}")
         return 1
     
     except KeyboardInterrupt:
