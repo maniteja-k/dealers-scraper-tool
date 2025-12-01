@@ -1,0 +1,145 @@
+{
+  "_comment": "Example configurations - Copy entire 'vehicle_types' section to scraper_config.json",
+  
+  "example_1_single_brand_all_cities": {
+    "vehicle_types": {
+      "cars": {
+        "base_url": "https://www.zigwheels.com/dealers",
+        "brands": [
+          {
+            "name": "maruti-suzuki",
+            "locations": "all"
+          }
+        ]
+      }
+    }
+  },
+  
+  "example_2_multiple_brands_all_cities": {
+    "vehicle_types": {
+      "cars": {
+        "base_url": "https://www.zigwheels.com/dealers",
+        "brands": [
+          {"name": "bmw", "locations": "all"},
+          {"name": "audi", "locations": "all"},
+          {"name": "mercedes-benz", "locations": "all"},
+          {"name": "hyundai", "locations": "all"}
+        ]
+      }
+    }
+  },
+  
+  "example_3_specific_cities": {
+    "vehicle_types": {
+      "cars": {
+        "base_url": "https://www.zigwheels.com/dealers",
+        "brands": [
+          {
+            "name": "hyundai",
+            "locations": [
+              "Mumbai",
+              "Delhi",
+              "Bangalore",
+              "Hyderabad",
+              "Chennai",
+              "Pune",
+              "Ahmedabad",
+              "Jaipur",
+              "Lucknow",
+              "Kolkata"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  
+  "example_4_luxury_brands": {
+    "vehicle_types": {
+      "cars": {
+        "base_url": "https://www.zigwheels.com/dealers",
+        "brands": [
+          {"name": "bmw", "locations": "all"},
+          {"name": "audi", "locations": "all"},
+          {"name": "mercedes-benz", "locations": "all"},
+          {"name": "porsche", "locations": "all"},
+          {"name": "jaguar", "locations": "all"},
+          {"name": "land-rover", "locations": "all"},
+          {"name": "volvo", "locations": "all"},
+          {"name": "lexus", "locations": "all"}
+        ]
+      }
+    }
+  },
+  
+  "example_5_budget_brands": {
+    "vehicle_types": {
+      "cars": {
+        "base_url": "https://www.zigwheels.com/dealers",
+        "brands": [
+          {"name": "maruti-suzuki", "locations": "all"},
+          {"name": "hyundai", "locations": "all"},
+          {"name": "tata", "locations": "all"},
+          {"name": "mahindra", "locations": "all"},
+          {"name": "ford", "locations": "all"},
+          {"name": "renault", "locations": "all"}
+        ]
+      }
+    }
+  },
+  
+  "example_6_metro_cities_only": {
+    "vehicle_types": {
+      "cars": {
+        "base_url": "https://www.zigwheels.com/dealers",
+        "brands": [
+          {
+            "name": "maruti-suzuki",
+            "locations": [
+              "Mumbai",
+              "Delhi",
+              "Bangalore",
+              "Hyderabad",
+              "Chennai"
+            ]
+          },
+          {
+            "name": "hyundai",
+            "locations": [
+              "Mumbai",
+              "Delhi",
+              "Bangalore",
+              "Hyderabad",
+              "Chennai"
+            ]
+          },
+          {
+            "name": "tata",
+            "locations": [
+              "Mumbai",
+              "Delhi",
+              "Bangalore",
+              "Hyderabad",
+              "Chennai"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  
+  "example_7_testing_config": {
+    "_note": "Quick test - should take <1 minute",
+    "vehicle_types": {
+      "cars": {
+        "base_url": "https://www.zigwheels.com/dealers",
+        "brands": [
+          {
+            "name": "bmw",
+            "locations": ["Hyderabad", "Chennai"]
+          }
+        ]
+      }
+    }
+  }
+}

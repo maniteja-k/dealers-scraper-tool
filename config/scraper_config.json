@@ -1,0 +1,30 @@
+{
+  "vehicle_types": {
+    "cars": {
+      "base_url": "https://www.zigwheels.com/dealers",
+      "brands": [
+        
+        {
+          "name": "Kia",
+          "locations": "all"
+        }
+      ]
+    }
+  },
+  "output_format": "excel",
+  "headless": true,
+  "timeout": 15000,
+  "validate_data": false,
+  "skip_invalid": false,
+  "use_city_json": true,
+  "natural_delays": {
+    "between_cities": [1, 3],
+    "between_brands": [3, 8],
+    "after_page_load": [0.5, 1.5]
+  },
+  "instructions": {
+    "brands_supported": "bmw, audi, benz (mercedes-benz), ford, hyundai, mahindra, maruti-suzuki, tata, kia, skoda, volkswagen, renault, mg-motor, citroen, jeep, byd, tesla, volvo, porsche, jaguar, lamborghini, ferrari, rolls-royce, etc.",
+    "setup": "Edit 'brands' array. Examples: { \"name\": \"maruti-suzuki\", \"locations\": \"all\" } or { \"name\": \"hyundai\", \"locations\": [\"Mumbai\", \"Delhi\"] }",
+    "output": "Excel file with columns: vehicle_type, brand, location, dealer_name, address, phone, email, city, state, pincode, dealer_code, scraped_at, source_url"
+  }
+}
